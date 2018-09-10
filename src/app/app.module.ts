@@ -7,11 +7,23 @@ import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { PostLitComponent } from './post-lit/post-lit.component';
+import { SignupComponent } from './signup/signup.component';
+import { LitListComponent } from './lit-list/lit-list.component';
+import { LitDetailComponent } from './lit-detail/lit-detail.component';
+import { LitCommentComponent } from './lit-comment/lit-comment.component';
+import { LitCommentPostComponent } from './lit-comment-post/lit-comment-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    PostLitComponent,
+    SignupComponent,
+    LitListComponent,
+    LitDetailComponent,
+    LitCommentComponent,
+    LitCommentPostComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +31,6 @@ import { LoginComponent } from './login/login.component';
     HttpModule,
   ],
   providers: [ SessionService ],  
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
